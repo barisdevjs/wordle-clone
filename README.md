@@ -10,3 +10,5 @@ https://user-images.githubusercontent.com/84816619/163714835-856ee733-ef0a-4724-
 ---
 
 ### This app logic is build by the help of JavaScript
+
+- After cloning this project, go to the root of this project and run `start index.html`
