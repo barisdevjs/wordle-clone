@@ -71,7 +71,6 @@ function handleMouseClick(e) {
 }
 
 function handleKeyDown(e) {
-    console.log(e)
     if (e.key === 'Enter') {
         submitGuess();
         return;
@@ -119,7 +118,7 @@ function submitGuess() {
         return word + tile.dataset.letter;
     }, '');
 
-    if (!dictionary.includes(guess)) {
+    if (!dictionary.find( e => e === guess.toLowerCase())) {
         showAlert('Not in the List');
         shakeTiles(activeTiles);
         return;
